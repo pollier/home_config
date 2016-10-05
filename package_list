@@ -1,7 +1,8 @@
+
 aligner
 angular-jonpapa-snippets
+ansible-snippets
 atom-beautify
-atom-omorianko
 atom-ternjs
 auto-detect-indentation
 auto-indent-file
@@ -26,13 +27,17 @@ expose
 file-icons
 filesize
 git-time-machine
+grammar-token-limit
 header-42
 highlight-line
 highlight-selected
 indent-guide-improved
+language-ansible
 language-arduino
 language-ini
 language-markdown
+language-nginx
+language-nsis
 language-powershell
 language-scala
 language-terraform
@@ -53,7 +58,6 @@ minimap-find-and-replace
 minimap-highlight-selected
 minimap-linter
 minimap-pigments
-norminette-linter
 nucleus-dark-ui
 open-recent
 pane-layout-plus
