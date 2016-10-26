@@ -39,3 +39,5 @@ alias gtcp="git add -A && git commit -m gtcp && git push -u origin master"
 alias webserver="python -m SimpleHTTPServer"
 
 alias rmrf="rm -Rf"
+
+alias gtree="git log --graph --decorate --all --oneline"
