@@ -14,13 +14,15 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-completions src
 antigen bundle history
 # OS specific plugins
-if [[ $CURRENT_OS == 'OS X' ]]; then
+if [[ $(uname) == 'Darwin' ]]; then
     antigen bundle vasyharan/zsh-brew-services
     antigen bundle ssh-agent
     antigen bundle brew
     antigen bundle brew-cask
     antigen bundle gem
     antigen bundle osx
+    export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+
 elif [[ $CURRENT_OS == 'Linux' ]]; then
     # None so far...
 
