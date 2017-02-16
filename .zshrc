@@ -43,3 +43,5 @@ alias webserver="python -m SimpleHTTPServer"
 alias rmrf="rm -Rf"
 
 alias gtree="git log --graph --decorate --all --oneline"
+
+alias usd="diff ~/.lsusb <(lsusb)"
