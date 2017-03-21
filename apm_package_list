@@ -1,3 +1,4 @@
+README.md
 aligner
 angular-jonpapa-snippets
 ansible-snippets
@@ -7,6 +8,7 @@ auto-detect-indentation
 auto-indent-file
 autoclose-html
 autocomplete-angular-material
+autocomplete-ansible
 autocomplete-clang
 autocomplete-modules
 autocomplete-paths
@@ -14,10 +16,12 @@ autocomplete-python
 build
 build-make
 busy
+busy-signal
 cake-syntax
 color-picker
 color-tabs
 compare-files
+console-panel
 docblockr
 editor-stats
 emmet
@@ -31,6 +35,7 @@ header-42
 highlight-line
 highlight-selected
 indent-guide-improved
+intentions
 language-ansible
 language-arduino
 language-ini
@@ -42,14 +47,19 @@ language-scala
 language-terraform
 lines
 linter
+linter-ansible-linting
 linter-clang
 linter-eslint
 linter-markdown
 linter-php
 linter-scalac
 linter-shellcheck
+linter-ui-default
+markdown-folder
 markdown-pdf
+markdown-preview-plus
 markdown-scroll-sync
+markdown-toc
 markdown-writer
 minimap
 minimap-autohide
