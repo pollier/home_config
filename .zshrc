@@ -45,3 +45,4 @@ alias rmrf="rm -Rf"
 alias gtree="git log --graph --decorate --all --oneline"
 
 alias usd="diff ~/.lsusb <(lsusb)"
+while sleep 1;do tput sc;tput cup 0 $(($(tput cols)-29));date;tput rc;done &
