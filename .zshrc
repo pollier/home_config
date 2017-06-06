@@ -7,19 +7,11 @@ source "$HOME/.antigen/antigen.zsh"
 
 antigen use oh-my-zsh
 antigen bundle git
-antigen bundle rsync
 antigen bundle gnu-utils
-antigen bundle python
-antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle zsh-users/zsh-completions src
 antigen bundle history
 # OS specific plugins
 if [[ $(uname) == 'Darwin' ]]; then
-    antigen bundle vasyharan/zsh-brew-services
-    antigen bundle ssh-agent
     antigen bundle brew
-    antigen bundle brew-cask
-    antigen bundle gem
     antigen bundle osx
     export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
@@ -45,4 +37,3 @@ alias rmrf="rm -Rf"
 alias gtree="git log --graph --decorate --all --oneline"
 
 alias usd="diff ~/.lsusb <(lsusb)"
-while sleep 1;do tput sc;tput cup 0 $(($(tput cols)-29));date;tput rc;done &
