@@ -11,7 +11,6 @@ antigen bundle gnu-utils
 antigen bundle history
 # OS specific plugins
 if [[ $(uname) == 'Darwin' ]]; then
-    antigen bundle brew
     antigen bundle osx
     export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
