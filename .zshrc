@@ -24,8 +24,8 @@ elif [[ $CURRENT_OS == 'Cygwin' ]]; then
     antigen bundle cygwin
 fi
 
-antigen-theme ys
-antigen-apply
+antigen theme ys
+antigen apply
 
 alias gtcp="git add -A && git commit -m gtcp && git push -u origin master"
 
