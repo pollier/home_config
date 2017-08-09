@@ -26,19 +26,11 @@ fi
 
 antigen theme ys
 antigen apply
-
 alias gtcp="git add -A && git commit -m gtcp && git push -u origin master"
-
 alias webserver="python -m SimpleHTTPServer"
-
 alias rmrf="rm -Rf"
-
 alias gtree="git log --graph --decorate --all --oneline"
-
 alias usd="diff ~/.lsusb <(lsusb)"
-
 alias weather="curl wttr.in/bordeaux"
-
 BROWSER=/usr/bin/firefox
-
 rtfm() { help $@ || man $@ || $BROWSER "http://www.google.com/search?q=$@"; }
