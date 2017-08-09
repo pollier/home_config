@@ -37,4 +37,6 @@ alias gtree="git log --graph --decorate --all --oneline"
 
 alias usd="diff ~/.lsusb <(lsusb)"
 
+BROWSER=/usr/bin/firefox
+
 rtfm() { help $@ || man $@ || $BROWSER "http://www.google.com/search?q=$@"; }
