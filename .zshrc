@@ -34,6 +34,3 @@ alias usd="diff ~/.lsusb <(lsusb)"
 alias weather="curl wttr.in/bordeaux"
 BROWSER=/usr/bin/firefox
 rtfm() { help $@ || man $@ || $BROWSER "http://www.google.com/search?q=$@"; }
-if [[ $(uname) == 'Darwin' ]]; then
-    weather &
-fi
