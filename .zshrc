@@ -31,6 +31,6 @@ alias webserver="python -m SimpleHTTPServer"
 alias rmrf="rm -Rf"
 alias gtree="git log --graph --decorate --all --oneline"
 alias usd="diff ~/.lsusb <(lsusb)"
-alias weather="curl wttr.in/bordeaux"
+alias weather="curl wttr.in/warsaw"
 BROWSER=/usr/bin/firefox
 rtfm() { help $@ || man $@ || $BROWSER "http://www.google.com/search?q=$@"; }
