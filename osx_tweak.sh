@@ -10,4 +10,3 @@ defaults write com.apple.LaunchServices LSQuarantine -boolean false
 defaults write com.apple.finder AppleShowAllFiles -boolean true
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -boolean true
 killall Finder
-trimforce enable
