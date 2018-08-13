@@ -13,6 +13,7 @@ kubernetes-helm
 lbzip2
 maven
 nano
+mkcert
 nmap
 node
 p7zip
