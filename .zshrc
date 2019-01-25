@@ -4,27 +4,25 @@ fi
 
 source "$HOME/.antigen/antigen.zsh"
 
+source ${0:A:h}/antigen/antigen.zsh
 
 antigen use oh-my-zsh
-antigen bundle git
-antigen bundle gnu-utils
-antigen bundle history
-# OS specific plugins
-if [[ $(uname) == 'Darwin' ]]; then
-    antigen bundle osx
-    export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
-elif [[ $CURRENT_OS == 'Linux' ]]; then
-    # None so far...
+antigen bundles <<EOBUNDLES
+    colored-man-pages
+    command-not-found
+    docker
+    git
+    gpg-agent
+    gnu-utils
+    history
+    ssh-agent
+    zsh-users/zsh-autosuggestions
+    zsh-users/zsh-completions
+    zsh-users/zsh-syntax-highlighting
+EOBUNDLES
 
-    if [[ $DISTRO == 'CentOS' ]]; then
-        antigen bundle centos
-    fi
-elif [[ $CURRENT_OS == 'Cygwin' ]]; then
-    antigen bundle cygwin
-fi
-
-antigen theme ys
+antigen theme agnoster
 antigen apply
 alias gtcp="git add -A && git commit -m gtcp && git push -u origin master"
 alias webserver="python -m SimpleHTTPServer"
