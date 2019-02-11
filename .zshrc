@@ -4,8 +4,6 @@ fi
 
 source "$HOME/.antigen/antigen.zsh"
 
-source ${0:A:h}/antigen/antigen.zsh
-
 antigen use oh-my-zsh
 
 antigen bundles <<EOBUNDLES
