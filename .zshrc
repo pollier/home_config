@@ -1,32 +1,36 @@
-if [ ! -d "$HOME/.antigen" ]; then
-	git clone https://github.com/zsh-users/antigen.git ~/.antigen
+if [ ! -d "$HOME/.oh-my-zsh" ]; then
+	git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 fi
 
-source "$HOME/.antigen/antigen.zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
-antigen use oh-my-zsh
+ZSH_THEME="agnoster"
 
-antigen bundles <<EOBUNDLES
-    colored-man-pages
-    command-not-found
-    docker
-    git
-    gpg-agent
-    gnu-utils
-    history
-    ssh-agent
-    zsh-users/zsh-autosuggestions
-    zsh-users/zsh-completions
-    zsh-users/zsh-syntax-highlighting
-EOBUNDLES
+DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-antigen theme agnoster
-antigen apply
-alias gtcp="git add -A && git commit -m gtcp && git push -u origin master"
+HIST_STAMPS="dd/mm/yyyy"
+
+plugins=(
+  brew
+  colored-man-pages
+  command-not-found
+  dirhistory
+  docker
+  git
+  gnu-utils
+  gpg-agent
+  history
+  httpie
+  osx
+  pip
+  ssh-agent
+  sublime
+)
+
+source $ZSH/oh-my-zsh.sh
+
+alias gtcp="git add -A; git commit -m gtcp; git push"
 alias webserver="python -m SimpleHTTPServer"
 alias rmrf="rm -Rf"
 alias gtree="git log --graph --decorate --all --oneline"
-alias usd="diff ~/.lsusb <(lsusb)"
-alias weather="curl wttr.in/warsaw"
-BROWSER=/usr/bin/firefox
-rtfm() { help $@ || man $@ || $BROWSER "http://www.google.com/search?q=$@"; }
+alias weather="curl wttr.in/bordeaux"
